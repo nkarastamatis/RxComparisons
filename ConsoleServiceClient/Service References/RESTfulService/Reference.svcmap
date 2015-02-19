@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cb986312-a3bc-4334-8b13-bde5246aa9c7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61702/RESTfulService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RESTfulService.xsd" MetadataType="Schema" ID="09e291bb-aab8-456b-93b5-9ee49afd1d68" SourceId="1" SourceUrl="http://localhost:61702/RESTfulService.svc?xsd=xsd1" />
+    <MetadataFile FileName="RESTfulService.wsdl" MetadataType="Wsdl" ID="c65b1cdf-e23e-4099-bcd0-bcca0107f5c2" SourceId="1" SourceUrl="http://localhost:61702/RESTfulService.svc?wsdl" />
+    <MetadataFile FileName="RESTfulService1.xsd" MetadataType="Schema" ID="cce63c0c-30ab-43a2-a0ef-27906efe135c" SourceId="1" SourceUrl="http://localhost:61702/RESTfulService.svc?xsd=xsd2" />
+    <MetadataFile FileName="RESTfulService2.xsd" MetadataType="Schema" ID="c162dfbd-b16c-4838-b9f5-a5ba1525b0e2" SourceId="1" SourceUrl="http://localhost:61702/RESTfulService.svc?xsd=xsd3" />
+    <MetadataFile FileName="RESTfulService3.xsd" MetadataType="Schema" ID="2f46bdbf-25d1-4400-8254-9d2599770ea9" SourceId="1" SourceUrl="http://localhost:61702/RESTfulService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

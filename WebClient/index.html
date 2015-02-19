@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="http://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.js"></script>
+      <title>TESTE</title>
+   </head>
+   <body>
+       <input id="Button1" type="button" value="button" onclick="CallRESTWCFService()"/>
+<div id="content">
+
+</div>
+   </body>
+   <script type="text/javascript">
+
+    function CallRESTWCFService() {
+	$.support.cors = true;
+	$.ajax({
+            url: "http://localhost:61702/RESTfulService.svc/rest/GetEnumerableOfInt?",
+            type: "POST",
+            data: "{}",       
+            success: fnsuccesscallback,
+            contentType: "application/json; charset=utf-8",
+            error: fnerrorcallback,
+            dataType: "json"
+        });   
+    }
+
+    
+    function fnsuccesscallback(data) {
+        addRow();
+    }
+
+    function fnerrorcallback(one, two, err) {
+	alert(err);
+    }
+
+function addRow() {
+    var div = document.createElement('div');
+
+    div.className = 'row';
+
+    div.innerHTML = '<input type="text" name="name" value="" />\
+        <input type="text" name="value" value="" />\
+        <label> <input type="checkbox" name="check" value="1" /> Checked? </label>\
+        <input type="button" value="-" onclick="removeRow(this)">';
+
+     document.getElementById('content').appendChild(div);
+}
+  </script>
+</html>
