@@ -7,6 +7,7 @@
         <DataGrid ItemsSource="{Binding GridObjects}" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Height="184" Width="772"/>
         <Button Command="{Binding LoadRxGrid}" Content="Load Rx" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="75"/>
         <DataGrid ItemsSource="{Binding RxGridObjects}" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top" Height="250" Width="772"/>
+        <TextBlock Text="{Binding RxProgress}" HorizontalAlignment="Left" Margin="90,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="85"/>
 
     </Grid>
 </Window>
