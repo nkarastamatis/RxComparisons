@@ -1,0 +1,12 @@
+﻿<Window x:Class="WpfGridBindingComparison.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <Button Command="{Binding LoadGrid}" Content="Load" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="75"/>
+        <DataGrid ItemsSource="{Binding GridObjects}" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Height="184" Width="772"/>
+        <Button Command="{Binding LoadRxGrid}" Content="Load Rx" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="75"/>
+        <DataGrid ItemsSource="{Binding RxGridObjects}" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top" Height="250" Width="772"/>
+
+    </Grid>
+</Window>
